@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .hero-image {
+        @apply rounded-2xl shadow-2xl;
+        transform: rotateX(5deg) rotateY(-10deg) rotateZ(2deg);
+    }
+    .hero-reflection {
+        @apply absolute inset-0 left-20 top-10 bg-gradient-to-bl from-indigo-200 to-pink-200 rounded-2xl shadow-2xl;
+        transform: scale(1.1) rotateX(5deg) rotateY(-10deg) rotateZ(2deg);
+    }
+};
+@layer utilities {
+    .perspective {
+        perspective: 1000px;
+    }
+}
